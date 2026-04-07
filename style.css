@@ -1,0 +1,104 @@
+:root {
+    --bg: #0a1628;
+    --accent: #00c6ff;
+    --accent2: #72efdd;
+    --font-primary: 'Outfit', sans-serif;
+    --font-secondary: 'DM Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: var(--bg);
+    color: white;
+    font-family: var(--font-primary);
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 2rem;
+    background: rgba(10, 22, 40, 0.95);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header nav ul {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+header nav ul li a:hover {
+    color: var(--accent);
+}
+
+.hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+.hero-content {
+    text-align: center;
+    padding: 4rem 1rem;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    background: var(--accent2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color: var(--bg);
+    margin: 0 auto 1rem;
+}
+
+section {
+    padding: 4rem 2rem;
+}
+
+.project-card {
+    background: rgba(255, 255, 255, 0.05);
+    padding: 1.5rem;
+    margin-bottom: 2rem;
+    border-radius: 12px;
+}
+
+footer {
+    text-align: center;
+    padding: 2rem;
+    font-size: 0.9rem;
+    color: #ccc;
+}
+
+@media(max-width:768px) {
+    header nav ul {
+        display: none;
+        flex-direction: column;
+        background: rgba(10, 22, 40, 0.95);
+        position: absolute;
+        top: 60px;
+        right: 0;
+        width: 200px;
+        padding: 1rem;
+    }
+
+    .hamburger {
+        display: block;
+    }
+}
