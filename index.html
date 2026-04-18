@@ -1,89 +1,165 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Archana Anil Patil Portfolio</title>
+    <title>Archana Anil Patil | Portfolio</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;700&family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header class="sticky-nav">
-        <div class="logo">AAP</div>
-        <nav>
-            <ul>
-                <li><a href="#hero">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#achievements">Achievements</a></li>
-                
-            </ul>
-        </nav>
-        <div class="hamburger">☰</div>
-    </header>
 
-    <section id="hero">
-        <div class="hero-content">
-            <div class="avatar">AA</div>
-            <h1>Archana Anil Patil</h1>
-            <p>curious mind .creative solutions</p>
+<div class="cursor"></div>
+<div class="cursor-follower"></div>
+
+<nav>
+    <div class="logo">AAP</div>
+    <ul class="nav-links">
+        <li><a href="#about" class="nav-link">About</a></li>
+        <li><a href="#education" class="nav-link">Education</a></li>
+        <li><a href="#skills" class="nav-link">Skills</a></li>
+        <li><a href="#projects" class="nav-link">Projects</a></li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+    </ul>
+</nav>
+
+<header>
+    <div class="hero-content">
+        <h1 class="glitch">Archana Anil Patil</h1>
+        <p class="role">Student | Innovator</p>
+        <p class="tagline">Building smart solutions with code & creativity</p>
+        <a href="#" class="btn">Download Resume</a>
+    </div>
+</header>
+
+<main>
+
+<section id="about" class="section">
+    <h2 class="section-title">About Me</h2>
+    <div class="section-content">
+        <p>I am an Information Science student passionate about IoT and software development. I enjoy building real-world solutions using programming and embedded systems.</p>
+        <p>Email: archupatil2903@gmail.com</p>
+        <p>
+            <a href="https://www.linkedin.com">LinkedIn</a> |
+            <a href="https://github.com">GitHub</a>
+        </p>
+    </div>
+</section>
+
+<section id="education" class="section">
+    <h2 class="section-title">Education</h2>
+
+    <div class="timeline">
+
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024 - 2028</div>
+            <div class="timeline-content">
+                <h3>B.E. Information Science</h3>
+                <p>Vidyavardhaka College of Engineering, Mysuru</p>
+            </div>
         </div>
-    </section>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Student based in Belagavi, Karnataka, pursuing B.E. in Information Science at Vidyavardhaka College of
-            Engineering Mysuru (2024 - 2028).</p>
-        <p>Email: archupatil2903@gmail.com | <a href="https://www.linkedin.com/in/archana-patil-09">LinkedIn</a> | <a
-                href="https://github.com/archana-cp">GitHub</a></p>
-    </section>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2024</div>
+            <div class="timeline-content">
+                <h3>PUC</h3>
+                <p>Govt PU College Majalatti</p>
+            </div>
+        </div>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li>B.E. in Information Science — Vidyavardhaka College of Engineering Mysuru (2024 - 2028) </li>
-            <li>12th / PUC — Govt P U College Majalatti, 2024</li>
-            <li>10th — Shri Kadsiddheshwar High School Benadi, 2022</li>
-        </ul>
-    </section>
+        <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-date">2022</div>
+            <div class="timeline-content">
+                <h3>10th Grade</h3>
+                <p>Shri Kadsiddheshwar High School Benadi</p>
+            </div>
+        </div>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p><strong>Programming:</strong>Basics of C, Python, Java</p>
-        <p><strong>Web:</strong> HTML/CSS</p>
-        <p><strong>Databases:</strong> MongoDB</p>
-        <p><strong>Tools:</strong> GitHub, VS Code, Google Collab</p>
-        <p><strong>Hardware/IoT:</strong> ESP8266</p>
-        <p><strong>Soft Skills:</strong> Teamwork, Time Management</p>
-    </section>
+    </div>
+</section>
 
-    <section id="projects">
-        <h2>Projects</h2>
+<section id="skills" class="section">
+    <h2 class="section-title">Skills</h2>
+
+    <div class="skills-grid">
+        <div class="skill-tag">Python</div>
+        <div class="skill-tag">Java</div>
+        <div class="skill-tag">HTML/CSS</div>
+        <div class="skill-tag">MongoDB</div>
+        <div class="skill-tag">ESP8266</div>
+        <div class="skill-tag">GitHub</div>
+    </div>
+</section>
+
+<section id="projects" class="section">
+    <h2 class="section-title">Projects</h2>
+
+    <div class="projects-grid">
+
         <div class="project-card">
-            <h3>Smart Notice Board</h3>
-            <p><em>IoT</em></p>
-            <p>Built an IoT-based smart notice board using ESP8266 to display real-time messages wirelessly.</p>
-            <p>Built an IoT-based smart notice board using ESP8266 and I2C LCD to display real-time messages wirelessly.
-                The system enables remote updates through Wi-Fi and cloud integration, eliminating the need for manual
-                notice updates. It improves communication efficiency by allowing instant and automated message delivery.
-            </p>
-            <p><strong>Tags:</strong> IoT</p>
-            <p><strong>Status:</strong> Completed</p>
+            <div class="project-content">
+                <h3>Smart Notice Board</h3>
+                <p>IoT-based system using ESP8266 to display real-time messages wirelessly.</p>
+                <span class="status">Completed</span>
+            </div>
         </div>
-    </section>
 
-    <section id="achievements">
-        <h2>Achievements & Experience</h2>
-        <p><strong>Certifications:</strong> Introduction to OOPs with Java — Coursera</p>
-        <p><strong>Leadership Roles:</strong> Volunteer at Infothon 5.0</p>
-    <footer>
-        <p>&copy; 2026 Archana Anil Patil</p>
-    </footer>
+        <div class="project-card">
+            <div class="project-content">
+                <h3>Portfolio Website</h3>
+                <p>Personal portfolio built using HTML, CSS, and JavaScript.</p>
+                <span class="status">Completed</span>
+            </div>
+        </div>
 
-    <script src="script.js"></script>
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2 class="section-title">Contact</h2>
+
+    <div class="contact-container">
+
+        <form class="contact-form">
+            <div class="input-group">
+                <input type="text" required placeholder=" ">
+                <label>Name</label>
+            </div>
+
+            <div class="input-group">
+                <input type="email" required placeholder=" ">
+                <label>Email</label>
+            </div>
+
+            <div class="input-group">
+                <textarea required placeholder=" "></textarea>
+                <label>Message</label>
+            </div>
+
+            <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+
+        <div class="social-links">
+            <a href="#" class="social-link">in</a>
+            <a href="#" class="social-link">gh</a>
+            <a href="#" class="social-link">@</a>
+        </div>
+
+    </div>
+</section>
+
+</main>
+
+<footer>
+    <p>© 2026 Archana Anil Patil</p>
+</footer>
+
+<script src="script.js"></script>
 </body>
-
 </html>
